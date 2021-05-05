@@ -71,7 +71,7 @@ public class CompositionGenerator {
         
         resetSetupInfo()
         
-        let composition = AVMutableComposition(urlAssetInitializationOptions: [AVURLAssetPreferPreciseDurationAndTimingKey: true])
+        let composition = AVMutableComposition(urlAssetInitializationOptions: [AVURLAssetPreferPreciseDurationAndTimingKey: false])
         var videoChannelTrackIDs: [Int: Int32] = [:]
         func getVideoTrackID(for index: Int) -> Int32 {
             if let trackID = videoChannelTrackIDs[index] {
